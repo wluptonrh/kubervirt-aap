@@ -4,3 +4,4 @@ connections:
   - host: "{{ ocp_host }}"
     username: "{{ ocp_username }}"
     password: "{{ ocp_password }}"
+    validate_certs: false
