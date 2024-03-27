@@ -1,6 +1,6 @@
-- name: Authenticate with token and return all VirtualMachineInstances for all accessible namespaces
-  plugin: kubevirt.core.kubevirt
-  connections:
-    - host: "{{ ocp_host }}"
-      username: "{{ ocp_username }}"
-      password: "{{ ocp_password }}"
+name: Authenticate with token and return all VirtualMachineInstances for all accessible namespaces
+plugin: kubevirt.core.kubevirt
+connections:
+  - host: "{{ ocp_host }}"
+    username: "{{ ocp_username }}"
+    password: "{{ ocp_password }}"
