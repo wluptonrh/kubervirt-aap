@@ -1,0 +1,4 @@
+plugin: kubevirt.core.kubevirt
+connections:
+  - namespaces:
+      - kubevirt-ansible
