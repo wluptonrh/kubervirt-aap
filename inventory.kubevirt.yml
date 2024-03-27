@@ -2,5 +2,5 @@
   plugin: kubevirt.core.kubevirt
   connections:
     - host: "{{ ocp_host }}"
-      api_key: "{{ ocp_api_key }}"
-      validate_certs: false
+      username: "{{ ocp_username }}"
+      password: "{{ ocp_password }}"
