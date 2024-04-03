@@ -1,7 +1,7 @@
-name: Authenticate with token and return all VirtualMachineInstances for all accessible namespaces
 plugin: kubevirt.core.kubevirt
 connections:
-  - host: "{{ ocp_host }}"
-    username: "{{ ocp_username }}"
-    password: "{{ ocp_password }}"
+  - host: "{{ lookup('ENV', 'K8S_AUTH_HOST') }}"
+    api_key: "{{ lookup('ENV', 'K8S_AUTH_API_KEY') }}"
     validate_certs: false
+    namespaces:
+      - kubevirt
