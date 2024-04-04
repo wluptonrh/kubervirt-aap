@@ -2,6 +2,6 @@ plugin: kubevirt.core.kubevirt
 #connections:
   #- host: https://172.30.0.1:443 #"{{ lookup('ENV', 'K8S_AUTH_HOST') }}"
     #api_key: "{{ lookup('ENV', 'K8S_AUTH_API_KEY') }}"
-    validate_certs: false
+    #validate_certs: false
     #namespaces:
     #  - kubevirt
