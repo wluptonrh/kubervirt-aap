@@ -7,7 +7,7 @@
       kubevirt.core.kubevirt_vm:
         state: running
         name: test
-        namespace: kubevirt
+        namespace: wlupton
         wait: yes
         wait_timeout: 600
         spec:
