@@ -4,4 +4,4 @@ connections:
 #    api_key: "{{ lookup('ENV', 'K8S_AUTH_API_KEY') }}"
 #    validate_certs: false
    - namespaces:
-      - wlupton
+      - openshift-cnv
