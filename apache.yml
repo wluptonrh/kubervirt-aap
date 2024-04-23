@@ -1,6 +1,6 @@
 ---
 - name: Install and start apache
-  hosts: 
+  hosts: "{{ _hosts | default('web') }}"
   become: yes
 
   tasks:
