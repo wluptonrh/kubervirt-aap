@@ -1,6 +1,6 @@
 ---
 - name: Install and start apache
-  hosts: "{{ _hosts | default('web') }}"
+  hosts: openshift-cnv-test
   become: yes
 
   tasks:
