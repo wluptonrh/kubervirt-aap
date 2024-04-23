@@ -3,10 +3,10 @@
   hosts: all
   #become: ye
   tasks:
-  - name: Install apache
-      ansible.builtin.dnf:
-        name: httpd
-        state: present
+   - name: Install apache
+     ansible.builtin.dnf:
+       name: httpd
+       state: present
 
     # - name: Permit traffic in default zone for http service
     #   ansible.posix.firewalld:
