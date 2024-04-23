@@ -3,8 +3,8 @@
   hosts: all
   #become: ye
   tasks:
-    - name: Install apache
-      dnf:
+  - name: Install apache
+      ansible.builtin.dnf:
         name: httpd
         state: present
 
