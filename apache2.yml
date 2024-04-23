@@ -4,7 +4,7 @@
 
    tasks:
      - name: install apache
-       dnf:
+       ansible.builtin.dnf:
          name: httpd
          state: present
 
