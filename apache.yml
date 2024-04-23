@@ -1,24 +1,23 @@
 ---
 - name: Install and start apache
   hosts: all
-  #become: yes
-
+  #become: ye
   tasks:
     - name: Install apache
       dnf:
         name: httpd
         state: present
 
-    - name: Permit traffic in default zone for http service
-      ansible.posix.firewalld:
-        service: http
-        permanent: true
-        state: enabled
-        immediate: true
-      check_mode: false
+    # - name: Permit traffic in default zone for http service
+    #   ansible.posix.firewalld:
+    #     service: http
+    #     permanent: true
+    #     state: enabled
+    #     immediate: true
+    #   check_mode: false
 
-    - name: Start apache
-      service:
-        name: httpd
-        state: started
-      check_mode: false
+    # - name: Start apache
+    #   service:
+    #     name: httpd
+    #     state: started
+    #   check_mode: false
