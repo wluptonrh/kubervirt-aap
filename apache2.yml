@@ -1,0 +1,10 @@
+---
+ - name: install and start apache
+   hosts: all
+
+   tasks:
+     - name: install apache
+       dnf:
+         name: httpd
+         state: present
+
