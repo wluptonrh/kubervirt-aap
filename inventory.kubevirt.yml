@@ -1,7 +1,0 @@
-plugin: kubevirt.core.kubevirt
-connections:
-#  - host: "{{ lookup('ENV', 'K8S_AUTH_HOST') }}"
-#    api_key: "{{ lookup('ENV', 'K8S_AUTH_API_KEY') }}"
-#    validate_certs: false
-   - namespaces:
-      - openshift-cnv
