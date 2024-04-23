@@ -1,7 +1,7 @@
 ---
 - name: Install and start apache
   hosts: openshift-cnv-test
-  become: yes
+  #become: yes
 
   tasks:
     - name: Install apache
